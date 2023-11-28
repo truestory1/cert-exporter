@@ -10,7 +10,7 @@ certManager:
   image:
     repository: ghcr.io/truestory1/cert-exporter
     # The default tag is ".Chart.AppVersion", only set "tag" to override that
-    tag: improve-pipelines
+    tag: latest
     pullPolicy: IfNotPresent
     command: ["./app"]
     args:
