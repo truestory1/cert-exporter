@@ -37,7 +37,7 @@ jobs:
           git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
 
       - name: Run chart-releaser
-        uses: helm/chart-releaser-action@v1.0.0
+        uses: helm/chart-releaser-action@v1.6.0
         with:
           charts_dir: helm
         env:
@@ -57,7 +57,7 @@ jobs:
           images: |
             ghcr.io/${{ github.repository }}
       # truestory1/cert-exporter
-      
+
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
         with:
