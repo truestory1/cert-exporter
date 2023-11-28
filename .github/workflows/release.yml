@@ -55,9 +55,9 @@ jobs:
         uses: docker/metadata-action@v5
         with:
           images: |
-            truestory1/cert-exporter
             ghcr.io/${{ github.repository }}
-
+      # truestory1/cert-exporter
+      
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
         with:
