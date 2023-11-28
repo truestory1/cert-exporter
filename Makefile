@@ -4,7 +4,7 @@ GORELEASER := $(GOPATH)/bin/goreleaser
 all: build
 
 $(GORELEASER):
-	go install github.com/goreleaser/goreleaser@v1.9.2
+	go install github.com/goreleaser/goreleaser@v1.22.1
 
 build: $(GORELEASER)
 	$(GORELEASER) build --skip-validate --rm-dist
